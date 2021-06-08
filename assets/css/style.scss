@@ -1,0 +1,204 @@
+//colores
+$color_le:#FBFBFB;
+$color_bg:#1B262C;
+$color_bg-transp:#1b262cd0;
+$color_1:#1D1996;
+$color_2:#45EEE4;
+$nav_heigth: 60px;
+body {
+    margin: 0;
+    padding: 0;
+    color: $color_le;
+    background-color: $color_bg;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    z-index: -10;
+    height: 105vh;
+    width: 100vw;
+}
+
+#header-davst {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.underline-title {
+    height: .07em;
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#36bed9), to(transparent));
+    background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
+    background-image: -o-linear-gradient(left, transparent, #fff, transparent);
+    background-image: linear-gradient(to right, transparent, #fff, transparent);
+}
+
+header {
+    nav {
+        background-color: transparent;
+        height: $nav_heigth;
+    }
+    .logo-davst {
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+    }
+    #hamb-menu {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.btn-davst {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $color_le;
+}
+
+.bg-trs {
+    background-color: $color_bg-transp;
+}
+
+.mob-menu-davst {
+    background-color: $color_bg-transp;
+    display: inline-block;
+    padding-top: 10px;
+    position: fixed;
+    left: 100vw;
+    top: $nav_heigth;
+    z-index: 100;
+    li {
+        width: 100vw;
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+
+section {
+    padding-bottom: 5px;
+}
+
+.hero {
+    padding-top: 80px;
+    h2 {
+        font-size: 7.5vw;
+        margin: 15px 0;
+        padding: 0;
+    }
+    b {
+        color: $color_2;
+    }
+    a {
+        margin-top: 30px;
+        font-size: 4vw;
+    }
+    img {
+        height: 45vw;
+        position: absolute;
+        right: 0;
+        top: 150px;
+    }
+}
+
+.title-section-davst {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.projects {
+    background-color: $color_bg-transp;
+    .card {
+        background-color: $color_bg;
+        border: 1px solid $color_le;
+    }
+    .img-leicon {
+        width: 40px;
+    }
+    #davst_project-1,
+    #davst_project-2,
+    #davst_project-3 {
+        opacity: 0;
+    }
+}
+
+.skills-davst {
+    div img {
+        border-radius: 10px;
+    }
+}
+
+.experience-davst {
+    background-color: $color_bg-transp;
+}
+
+//.about-me{}
+footer {
+    text-align: center;
+    background-color: $color_1;
+    margin: 0;
+    padding: 5px;
+}
+
+@media screen and (min-width: 520px) {
+    .hero {
+        h2 {
+            font-size: 5.5vw;
+        }
+        b {
+            color: $color_2;
+        }
+        a {
+            font-size: 2.5vw;
+        }
+        img {
+            height: 35vw;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero {
+        h2 {
+            font-size: 5.5vw;
+        }
+        b {
+            color: $color_2;
+        }
+        a {
+            font-size: 2.5vw;
+        }
+        img {
+            height: 30vw;
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .hero {
+        h2 {
+            font-size: 5.5vw;
+        }
+        b {
+            color: $color_2;
+        }
+        a {
+            font-size: 2.5vw;
+        }
+        img {
+            height: 25vw;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #hamb-menu {
+        display: none;
+    }
+}
