@@ -142,9 +142,35 @@ const showProjects = () => {
 
     }
 }
+const showSkills = () => {
+    var delay_1 = 0.3;
+    var px1 = 450;
+
+    if (screen.width < 994) {
+        px1 = 1450;
+    }
+    if (davst.screenY >= px1) {
+        if (davst.showedProject < 4) {
+            gsap.from("#skills-showed", {
+                y: 100,
+                duration: 1,
+                delay: delay_1
+            });
+            gsap.to("#skills-showed", {
+                opacity: 1,
+                duration: 1,
+                delay: delay_1
+            });
+            davst.showedProject++;
+        }
+    }
+}
 const showExperience = () => {
     var delay_1 = 0.3;
-    var px1 = 570;
+    var px1 = 600;
+    if (screen.width < 994) {
+        px1 = 1700;
+    }
     if (davst.screenY >= px1) {
         if (davst.showedProject < 5) {
             gsap.from("#exp-youtube", {
@@ -181,25 +207,7 @@ const showExperience = () => {
         }
     }
 }
-const showSkills = () => {
-    var delay_1 = 0.3;
-    var px1 = 830;
-    if (davst.screenY >= px1) {
-        if (davst.showedProject < 4) {
-            gsap.from("#skills-showed", {
-                y: 100,
-                duration: 1,
-                delay: delay_1
-            });
-            gsap.to("#skills-showed", {
-                opacity: 1,
-                duration: 1,
-                delay: delay_1
-            });
-            davst.showedProject++;
-        }
-    }
-}
+
 const startWith = () => {
     var t1 = gsap.timeline();
     t1.from("#davst_first-title", {
