@@ -79,7 +79,21 @@ const colorMenu = (color) => {
     }
 }
 const showProjects = () => {
-    if (davst.screenY >= 0) {
+    var px1 = 0;
+    var px2 = 400;
+    var px3 = 800;
+    /* if (screen.width < 994 && screen.width >= 425) {
+        px1 = 0;
+        px2 = 440;
+        px3 = 1100;
+    } */
+    if (screen.width >= 994) {
+        px1 = 0;
+        px2 = 0;
+        px3 = 0;
+    }
+
+    if (davst.screenY >= px1) {
         if (davst.showedProject < 1) {
             gsap.from("#davst_project-1", {
                 x: 100,
@@ -91,7 +105,7 @@ const showProjects = () => {
             davst.showedProject++;
         }
     }
-    if (davst.screenY > 650) {
+    if (davst.screenY > px2) {
         if (davst.showedProject < 2) {
             gsap.from("#davst_project-2", {
                 x: 100,
@@ -103,7 +117,7 @@ const showProjects = () => {
             davst.showedProject++;
         }
     }
-    if (davst.screenY > 1150) {
+    if (davst.screenY > px3) {
         if (davst.showedProject < 3) {
             gsap.from("#davst_project-3", {
                 x: 100,
@@ -121,35 +135,27 @@ const showProjects = () => {
 const startWith = () => {
 
     showProjects();
-
-    gsap.from("#davst_first-title", {
-        y: -50,
-        duration: 1,
-        opacity: 0
-    });
-    gsap.from("#davst_second-title", {
-        y: -50,
-        duration: 1,
-        opacity: 0,
-        delay: 0.5
-    });
-    gsap.from("#davst_download-cv", {
-        y: -50,
-        duration: 1,
-        opacity: 0,
-        delay: 0.8
-    });
-    gsap.from("#davst_photo-hero", {
-        x: 50,
-        duration: 1,
-        opacity: 0,
-        delay: 0.3
-    });
-
-    if (screen.width <= 768) {
-
-
-    }
+    var t1 = gsap.timeline();
+    t1.from("#davst_first-title", {
+            y: -50,
+            duration: 1,
+            opacity: 0
+        })
+        .from("#davst_second-title", {
+            y: -50,
+            duration: 1,
+            opacity: 0,
+        }, "-=0.5")
+        .from("#davst_download-cv", {
+            y: -50,
+            duration: 1,
+            opacity: 0,
+        }, "-=0.5")
+        .from("#davst_photo-hero", {
+            x: 50,
+            duration: 1,
+            opacity: 0,
+        }, "-=0.5");
 }
 
 
