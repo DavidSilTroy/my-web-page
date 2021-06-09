@@ -110,22 +110,22 @@ section {
   padding-top: 20px;
 }
 
-.projects {
+.projects-davst {
   background-color: #1b262cd0;
 }
 
-.projects .card {
+.projects-davst .card {
   background-color: #1B262C;
   border: 1px solid #FBFBFB;
 }
 
-.projects .img-leicon {
+.projects-davst .img-leicon {
   width: 40px;
 }
 
-.projects #davst_project-1,
-.projects #davst_project-2,
-.projects #davst_project-3 {
+.projects-davst #davst_project-1,
+.projects-davst #davst_project-2,
+.projects-davst #davst_project-3 {
   opacity: 0;
 }
 
