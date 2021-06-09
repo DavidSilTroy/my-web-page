@@ -133,8 +133,18 @@ section {
   border-radius: 10px;
 }
 
+.skills-davst #skills-showed {
+  opacity: 0;
+}
+
 .experience-davst {
   background-color: #1b262cd0;
+}
+
+.experience-davst #exp-youtube,
+.experience-davst #exp-github,
+.experience-davst #exp-instagram {
+  opacity: 0;
 }
 
 footer {
@@ -178,9 +188,6 @@ footer {
   .hero h2 {
     font-size: 5.5vw;
   }
-  .hero b {
-    color: #45EEE4;
-  }
   .hero a {
     font-size: 2.5vw;
   }
@@ -192,6 +199,18 @@ footer {
 @media screen and (min-width: 993px) {
   #hamb-menu {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero h2 {
+    font-size: 5.5vw;
+  }
+  .hero a {
+    font-size: 2vw;
+  }
+  .hero img {
+    height: 23vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

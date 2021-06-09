@@ -132,10 +132,18 @@ section {
     div img {
         border-radius: 10px;
     }
+    #skills-showed {
+        opacity: 0;
+    }
 }
 
 .experience-davst {
     background-color: $color_bg-transp;
+    #exp-youtube,
+    #exp-github,
+    #exp-instagram {
+        opacity: 0;
+    }
 }
 
 //.about-me{}
@@ -185,9 +193,6 @@ footer {
         h2 {
             font-size: 5.5vw;
         }
-        b {
-            color: $color_2;
-        }
         a {
             font-size: 2.5vw;
         }
@@ -200,5 +205,19 @@ footer {
 @media screen and (min-width: 993px) {
     #hamb-menu {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        h2 {
+            font-size: 5.5vw;
+        }
+        a {
+            font-size: 2vw;
+        }
+        img {
+            height: 23vw;
+        }
     }
 }
