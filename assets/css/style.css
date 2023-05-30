@@ -2,215 +2,44 @@ body {
   margin: 0;
   padding: 0;
   color: #FBFBFB;
-  background-color: #1B262C;
-  font-family: 'Red Hat Display', sans-serif;
+  background-color: #121212;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-#bg-video {
-  position: fixed;
-  top: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -10;
-  height: 105vh;
-  width: 100vw;
+.dast-bg {
+  color: #FBFBFB;
+  background-color: #121212;
 }
 
-#header-davst {
+.color-dast-1 {
+  color: #1D1996;
+  fill: #1D1996;
+}
+
+.color-dast-2 {
+  color: #45EEE4;
+}
+
+.color-dast-3 {
+  color: #20AFC2;
+}
+
+.color-dast-4 {
+  color: #CB327E;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.header-dast {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-}
-
-.underline-title {
-  height: .07em;
-  border: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
-  background-image: linear-gradient(to right, transparent, #fff, transparent);
-}
-
-header nav {
-  background-color: transparent;
-  height: 60px;
-}
-
-header .logo-davst {
-  width: 45px;
-  height: 45px;
-  margin-top: 10px;
-}
-
-header #hamb-menu {
-  width: 50px;
-  height: 50px;
-}
-
-.btn-davst {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #FBFBFB;
-}
-
-.bg-trs {
-  background-color: #1b262cd0;
-}
-
-.mob-menu-davst {
-  background-color: #1b262cd0;
-  display: inline-block;
-  padding-top: 10px;
-  position: fixed;
-  left: 100vw;
-  top: 60px;
-  z-index: 100;
-}
-
-.mob-menu-davst li {
-  width: 100vw;
-}
-
-.mob-menu-davst li a {
-  font-size: 2rem;
-}
-
-section {
-  padding-bottom: 5px;
-}
-
-.hero {
-  padding-top: 80px;
-}
-
-.hero h2 {
-  font-size: 7.5vw;
-  margin: 15px 0;
-  padding: 0;
-}
-
-.hero b {
-  color: #45EEE4;
-}
-
-.hero a {
-  margin-top: 30px;
-  font-size: 4vw;
-}
-
-.hero img {
-  height: 40vw;
-  position: absolute;
-  right: 0;
-  top: 150px;
-}
-
-.title-section-davst {
-  font-size: 30px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.projects-davst {
-  background-color: #1b262cd0;
-}
-
-.projects-davst .card {
-  background-color: #1B262C;
-  border: 1px solid #FBFBFB;
-}
-
-.projects-davst .img-leicon {
-  width: 40px;
-}
-
-.projects-davst #davst_project-1,
-.projects-davst #davst_project-2,
-.projects-davst #davst_project-3 {
-  opacity: 0;
-}
-
-.skills-davst div img {
-  border-radius: 10px;
-}
-
-.skills-davst #skills-showed {
-  opacity: 0;
-}
-
-.experience-davst {
-  background-color: #1b262cd0;
-}
-
-.experience-davst #exp-youtube,
-.experience-davst #exp-github,
-.experience-davst #exp-instagram {
-  opacity: 0;
-}
-
-footer {
-  text-align: center;
-  background-color: #1D1996;
-  margin: 0;
-  padding: 5px;
-}
-
-@media screen and (min-width: 520px) {
-  .hero h2 {
-    font-size: 5.5vw;
-  }
-  .hero b {
-    color: #45EEE4;
-  }
-  .hero a {
-    font-size: 2.5vw;
-  }
-  .hero img {
-    height: 35vw;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .hero h2 {
-    font-size: 5.5vw;
-  }
-  .hero b {
-    color: #45EEE4;
-  }
-  .hero a {
-    font-size: 2.5vw;
-  }
-  .hero img {
-    height: 22vw;
-  }
-}
-
-@media screen and (min-width: 950px) {
-  .hero h2 {
-    font-size: 5.5vw;
-  }
-  .hero a {
-    font-size: 2.5vw;
-  }
-  .hero img {
-    height: 19vw;
-  }
-}
-
-@media screen and (min-width: 993px) {
-  #hamb-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .hero h2 {
-    font-size: 5.5vw;
-  }
-  .hero a {
-    font-size: 2vw;
-  }
-  .hero img {
-    height: 16vw;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
