@@ -23,18 +23,51 @@ document.addEventListener("DOMContentLoaded", function(){
         // }
     };
     window.addEventListener('scroll', function() {
-        console.log(window.scrollY);
-        if (window.scrollY > 50) {
-          document.getElementById('navbar_top').classList.add('fixed-top');
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top');
-           // remove padding top from body
-          document.body.style.paddingTop = '0';
-        } 
+        // console.log(window.scrollY);
+        // if (window.scrollY > 50) {
+        //   document.getElementById('navbar_top').classList.add('fixed-top');
+        //   // add padding top to show content behind navbar
+        //   navbar_height = document.querySelector('.navbar').offsetHeight;
+        //   document.body.style.paddingTop = navbar_height + 'px';
+        // } else {
+        //   document.getElementById('navbar_top').classList.remove('fixed-top');
+        //    // remove padding top from body
+        //   document.body.style.paddingTop = '0';
+        // } 
     });
+
+    const cardTitles = document.querySelectorAll('.card-title');
+    const cardTexts = document.querySelectorAll('.card-text');
+    const maxTitleLines = 2; // Número máximo de líneas deseado
+    const maxTextLines = 4; // Número máximo de líneas deseado
+
+    function clampTextLines(elements, maxCharts) {
+      elements.forEach(element => { 
+        const text = element.textContent;
+        if(text && text.length> maxCharts)
+        {
+          element.textContent = text.substring(0, maxCharts - 3) + '...';
+        }  
+      });
+    }
+    if(cardTexts)
+    {
+      clampTextLines(cardTexts, 150);
+    }
+    if(cardTitles)
+    {
+      clampTextLines(cardTitles, 50);
+    }
+
+    const imageContainer = document.getElementById('image-container-internship');
+    if (imageContainer) {
+      const textColumn = imageContainer.parentNode.previousElementSibling;
+      const textHeight = textColumn.offsetHeight;
+      imageContainer.style.height = textHeight + 'px';
+    }
+
+    
+
   }); 
 
 
