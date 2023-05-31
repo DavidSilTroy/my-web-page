@@ -6,7 +6,7 @@
     <title>Davidsiltroy</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Import Bootstrap 5.2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
     <!--Import Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Import My owns Styles-->
@@ -14,6 +14,9 @@
 </head>
 
 <body >
+    <video autoplay muted loop id="bg-video" class="bg-video">
+        <source src="assets/video/fondo_hero.mp4" type="video/mp4">
+    </video>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark dast-bg header-dast w-100">
             <div class="container-fluid">
@@ -54,58 +57,132 @@
         </nav>
     </header>
     <main>
-        <div class="row">
-            <div class=" col-12">
+        <div class="row w-100">
+            <div class=" col-12 p-0 m-0">
                 <h3> &nbsp; </h3>
                 <h3> &nbsp; </h3>
             </div> 
-            <div class="col-12 position-relative ">  
+            <div class="col-12 position-relative p-0 m-0">  
                 <div class="row" id="index-page-content">
-                    <div class="col-12">
-                        
-                        <section id="index_hero" class="container">
-                            <div class="row">
-                                <div class="col-6 offset-3 d-md-none pb-3">
-                                    <img class="w-100" id="davst_photo-hero" src="assets/img/hero-image.png" alt="DavidSiltroy">
-                                    <div class="d-md-none position-absolute w-100 top-0 start-0 ms-5 opacity-25" style="z-index:-1; transform: rotate(-70deg); margin-top:10vh;">
-                                        <img src="assets/img/decoration.svg" class="w-100" alt="">
+                    <div class="col-12 p-0 m-0">
+
+                        <section id="index_hero" class="mb-5 pb-xl-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 offset-3 d-md-none pb-3">
+                                        <img class="w-100" id="davst_photo-hero" src="assets/img/hero-image.png" alt="DavidSiltroy">
+                                        <div class="d-md-none position-absolute w-100 top-0 start-0 opacity-25" style="z-index:-1; transform: rotate(-90deg); margin-top:10vh;">
+                                            <img src="assets/img/decoration.svg" class="w-100" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="position-relative col-12 col-md-8 d-flex align-items-center justify-content-center">
-                                    <div class="d-none d-md-block position-absolute w-100 top-0 start-0 ms-5 opacity-25" style="z-index:-1;">
-                                        <img src="assets/img/decoration.svg" class="w-100" alt="">
+                                    <div class="position-relative col-12 col-md-8 d-flex align-items-center justify-content-center">
+                                        <div class="d-none d-md-block position-absolute w-100 top-0 start-0 ms-5 opacity-25 pb-xl-5 pe-xl-5" style="z-index:-1;">
+                                            <img src="assets/img/decoration.svg" class="w-100 pb-xl-5" alt="">
+                                        </div>
+                                        <div class="ps-5">
+                                            <div class=" p-md-5 m-md-2 m-lg-5 d-flex align-items-center justify-content-center">
+                                                <h2>
+                                                Hello, I am 
+                                                <span class="color-dast-3 fw-bold">
+                                                David Silva Troya</span>, 
+                                                <span class="color-dast-4 fw-bold">
+                                                    Mechatronic Engineer</span>
+                                                and
+                                                <span class="color-dast-4 fw-bold">
+                                                    Applied Computer Science</span>.
+                                                </h2>
+                                            </div> 
+                                        </div>
                                     </div>
-                                    <div class="ps-5">
-                                        <div class=" p-md-5 m-md-2 m-lg-5 d-flex align-items-center justify-content-center">
-                                            <h2>
-                                            Hello, I am 
-                                            <span class="color-dast-3 fw-bold">
-                                            David Silva Troya</span>, 
-                                            <span class="color-dast-4 fw-bold">
-                                                Mechatronic Engenieer and
-                                                Applied Computer Science in Artificial Intelligence</span>.
-                                            </h2>
-                                        </div> 
+                                    <div class="d-none d-md-block col-md-4">
+                                        <img class="w-100" id="davst_photo-hero" src="assets/img/hero-image.png" alt="DavidSiltroy">
                                     </div>
-                                </div>
-                                <div class="d-none d-md-block col-md-4">
-                                    <img class="w-100" id="davst_photo-hero" src="assets/img/hero-image.png" alt="DavidSiltroy">
                                 </div>
                             </div>
                         </section>
                         
-                        <section id="index_blog" class="container"> 
+                        <section id="index_aboutme" class="dast-bg-transparent my-5 py-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 ">
+                                        <img src="assets/img/me_picture.png" class="h-100 w-100 rounded object-fit-cover" alt="David Silva Troya">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="color-dast-3">About me</h3>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>
+                                                    I am a passionate person who thrives on exploring new horizons both in my professional and personal life. 
+                                                    When I'm not delving into the world of programming and technology, you'll find me hiking in the mountains, 
+                                                    immersing myself in different cultures while traveling, and building genuine connections with the locals.  
+                                                </p>
+                                            </div>
+                                            <div class="col-12 d-none d-lg-block">
+                                                <p>
+                                                    Recently, I've developed a keen interest in archery and have become a member of a local club, 
+                                                    even participating in friendly competitions among other clubs. 
+                                                    Despite my years of academic study, I have always found time to work during vacations, 
+                                                    often assisting technicians in various fields. 
+                                                </p>
+                                            </div>
+                                            <div class="col-12 d-none d-lg-block">
+                                                <p>
+                                                    What truly excites me is the opportunity to continually learn, connect the dots, 
+                                                    and help others see things from a fresh perspective. 
+                                                    I believe in the power of understanding and strive to make a positive impact by sharing knowledge 
+                                                    and insights with those around me.
+                                                </p>
+                                            </div>
+                                            <div class="col-12">
+                                                <h5 class="color-dast-4">Mechatronics</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>
+                                                    From 2014 until 2021 I was student in the
+                                                    <a href="https://www.utn.edu.ec/">Universidad T&eacute;cnica del Norte</a>
+                                                    in the North of Ecuador. There I had my diploma as Mechatronic Engineer 
+                                                    and with the knowledge received in automatization 
+                                                    I found I wanted to know more about programming, 
+                                                    more about the Artificial Intelligence.
+                                                </p>
+                                            </div>
+                                            <div class="col-12">
+                                                <h5 class="color-dast-4">Applied Computer Science</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>
+                                                    From 2022 until 2023 I was student in the
+                                                    <a href="https://www.thomasmore.be/campussen/campus-geel"> University of Thomas More - Campus Geel</a>
+                                                    in Belgium. Here I got my second diploma, in Applied Computer Science which
+                                                    allowed me to learn more about Artificial Intellige, Big Data, Data Science, 
+                                                    Bussiness Intelligence and Data Engineering.
+                                                </p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </section>
+
+                        <section id="index_projects" class="container"> 
+                        </section>
+
+                        <section id="index_blog" class="container my-5"> 
                         <div class="row">
                             <div class="h2 text-center">
                                 Visit my blog
                             </div>
                             <div class="d-flex align-items-center justify-content-center w-100">
+                                 
+
                                 <div id="carouselId" class="carousel slide" style="height: 33vh; width:80vw;" data-bs-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                                        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                                        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-                                    </ol>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
                                     <div class="carousel-inner h-100" role="listbox">
                                         <div class="carousel-item active">
                                             <img src="assets/img/project_1.png" class="w-100" style="object-fit: cover;" alt="First slide">
@@ -146,20 +223,13 @@
                                 </div>
                             </div>
                         </section>
-
-                        <section id="index_aboutme" class="container">
-                            
-                        </section>
-
-                        <section id="index_projects" class="container">
-                            
-                        </section>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+    
     <footer class="pt-4">
         <p class="w-100 text-center p-0">
             © 2023 davidsiltroy
@@ -167,15 +237,13 @@
     </footer>
  
 
-    <!--video autoplay muted loop id="bg-video">
-        <source src="assets/video/fondo_hero.mp4" type="video/mp4">
-    </-video -->
 
      
     
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="assets/js/loader.js"></script>
     <script>
     </script>

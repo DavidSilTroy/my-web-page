@@ -11,6 +11,11 @@ body {
   background-color: #121212;
 }
 
+.dast-bg-transparent {
+  color: #FBFBFB;
+  background-color: rgba(27, 38, 44, 0.8156862745);
+}
+
 .color-dast-1 {
   color: #1D1996;
   fill: #1D1996;
@@ -35,6 +40,18 @@ body {
   backdrop-filter: blur(6.2px);
   -webkit-backdrop-filter: blur(6.2px);
   border: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+  height: 105vh;
+  width: 100vw;
+  z-index: -1;
+  filter: brightness(0.5) blur(5px);
 }
 
 .header-dast {

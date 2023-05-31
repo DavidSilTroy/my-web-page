@@ -14,10 +14,14 @@ body {
     color: $color_le;
     background-color: $color_bg;
     font-family: 'Red Hat Display', sans-serif;
-}
+} 
 .dast-bg{
     color: $color_le;
     background-color: $color_bg;
+}
+.dast-bg-transparent{
+    color: $color_le;
+    background-color: $color_bg-transp;
 }
 .color-dast-1{
     color: $color_1;
@@ -41,14 +45,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.37);
 }
 
-// #bg-video {
-//     position: fixed;
-//     top: 0;
-//     object-fit: cover;
-//     z-index: -10;
-//     height: 105vh;
-//     width: 100vw;
-// }
+.bg-video {
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    z-index: -10;
+    height: 105vh;
+    width: 100vw;
+    z-index: -1;
+    filter: brightness(0.5) blur(5px);
+}
 
 .header-dast {
     position: fixed;
@@ -56,6 +62,7 @@ body {
     left: 0;
     z-index: 100;
 }
+
 
 
 // .underline-title {
