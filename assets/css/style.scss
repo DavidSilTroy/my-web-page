@@ -67,14 +67,14 @@ body {
 
 
 
-// .underline-title {
-//     height: .07em;
-//     border: 0;
-//     background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#36bed9), to(transparent));
-//     background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
-//     background-image: -o-linear-gradient(left, transparent, #fff, transparent);
-//     background-image: linear-gradient(to right, transparent, #fff, transparent);
-// }
+.underline-title {
+    height: .07em;
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#36bed9), to(transparent));
+    background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
+    background-image: -o-linear-gradient(left, transparent, #fff, transparent);
+    background-image: linear-gradient(to right, transparent, #fff, transparent);
+}
 
 // header {
 //     nav {

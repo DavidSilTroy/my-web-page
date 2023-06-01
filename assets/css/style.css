@@ -59,4 +59,10 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+.underline-title {
+  height: 0.07em;
+  border: 0;
+  background-image: linear-gradient(to right, transparent, #fff, transparent);
 }/*# sourceMappingURL=style.css.map */

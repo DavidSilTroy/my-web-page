@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body >
+<body data-offset="300px">
     <video autoplay muted loop id="bg-video" class="bg-video">
         <source src="assets/video/fondo_hero.mp4" type="video/mp4">
     </video>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark dast-bg header-dast w-100">
+        <nav id="navbar-dast-index" class="navbar navbar-expand-lg navbar-dark dast-bg header-dast w-100">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,22 +32,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home" data-bs-dismiss="offcanvas">
+                            <a class="nav-link active" aria-current="page" href="#" >
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about me" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#index_aboutme" >
                                 About me
                             </a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="# projects" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#index_projects" >
                                 Achievements & Projects
                             </a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="#internship" data-bs-dismiss="offcanvas">
+                            <a class="nav-link" href="#index_internship" >
                                 Internship
                             </a>
                         </li> 
@@ -63,7 +63,7 @@
         </div> 
         <div class="col-12 position-relative p-0 m-0">  
             <div class="row" id="index-page-content">
-                <div class="col-12 p-0 m-0">
+                <div class="col-12 p-0 m-0" data-bs-spy="scroll" data-bs-target="#navbar-dast-index" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
 
                     <section id="index_hero" class="mb-5 pb-xl-4">
                         <div class="container-lg px-5">
@@ -103,16 +103,67 @@
                     <section id="index_aboutme" class="dast-bg-transparent my-5 py-5">
                         <div class="container-lg px-5">
                             <div class="row">
-                                <div class="col-12 col-md-6 ">
+                                <div class="col-12 text-center">
+                                    <h1 class="color-dast-3">
+                                        About me
+                                        <hr class="underline-title">
+                                    </h1>
+                                </div>
+                                <div class="col-12 col-md-6 position-relative">
                                     <img src="assets/img/me_picture.png" class="h-100 w-100 rounded object-fit-cover" alt="David Silva Troya">
+                                    <div class="w-100 position-absolute bottom-0 start-50 translate-middle-x p-3 mb-1 text-center">
+                                        <a 
+                                            type="button" 
+                                            class="btn btn-outline-success btn-lg p-1 m-1 p-md-3 m-md-2 glass-card"
+                                            href="#"
+                                            >
+                                            <h3 class="p-0 m-0">
+                                                <i class="bi bi-envelope-at-fill"></i>
+                                            </h3>
+                                        </a> 
+                                        <a 
+                                            type="button" 
+                                            class="btn btn-outline-success btn-lg p-1 m-1 p-md-3 m-md-2 glass-card"
+                                            href="#"
+                                            >
+                                            <h3 class="p-0 m-0">
+                                                <i class="bi bi-linkedin"></i>
+                                            </h3>
+                                        </a> 
+                                        <a 
+                                            type="button" 
+                                            class="btn btn-outline-success btn-lg p-1 m-1 p-md-3 m-md-2 glass-card"
+                                            href="#"
+                                            >
+                                            <h3 class="p-0 m-0">
+                                                <i class="bi bi-github"></i>
+                                            </h3>
+                                        </a> 
+                                        <a 
+                                            type="button" 
+                                            class="d-none btn btn-outline-success btn-lg p-1 m-1 p-md-3 m-md-2 glass-card"
+                                            href="#"
+                                            >
+                                            <h3 class="p-0 m-0">
+                                                <i class="bi bi-youtube "></i>
+                                            </h3>
+                                        </a> 
+                                        <a 
+                                            type="button" 
+                                            class="btn btn-outline-success btn-lg p-1 m-1 p-md-3 m-md-2 glass-card"
+                                            href="#"
+                                            >
+                                            <h3 class="p-0 m-0">
+                                                <i class="bi bi-file-earmark-check-fill"></i>
+                                            </h3>
+                                        </a> 
+                                    </div> 
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="row">
                                         <div class="col-12">
-                                            <h1 class="color-dast-3">About me</h1>
-                                        </div>
-                                        <div class="col-12">
                                             <p>
+                                                My name is <span class="color-dast-3 fw-bold"> David Silva Troya</span> and 
                                                 I am a passionate person who thrives on exploring new horizons both in my professional and personal life. 
                                                 When I'm not delving into the world of programming and technology, you'll find me hiking in the mountains, 
                                                 immersing myself in different cultures while traveling, and building genuine connections with the locals.  
@@ -168,7 +219,10 @@
                     <section id="index_projects" class="container-lg px-5"> 
                         <div class="row">
                             <div class="col-12 text-center">
-                                <h1 class="color-dast-3">Achievements & Projects</h1>
+                                <h1 class="color-dast-3">
+                                    Achievements & Projects
+                                    <hr class="underline-title">
+                                </h1>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -195,7 +249,10 @@
                         <div class="container-lg px-5">
                             <div class="row align-items-center">
                                 <div class="col-12 text-center">
-                                    <h1 class="color-dast-3 pb-1">Internship</h1>
+                                    <h1 class="color-dast-3 pb-1">
+                                        Internship
+                                        <hr class="underline-title">
+                                    </h1>
                                 </div>
                                 <div class="col-12 col-xl-6">
                                     <h2 class="color-dast-4">Stock Management System - CERcuits</h2>
