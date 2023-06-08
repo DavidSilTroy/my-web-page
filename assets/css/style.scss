@@ -63,10 +63,6 @@ body {
     z-index: 100;
 }
  
-  
-
-
-
 .underline-title {
     height: .07em;
     border: 0;
@@ -74,6 +70,14 @@ body {
     background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
     background-image: -o-linear-gradient(left, transparent, #fff, transparent);
     background-image: linear-gradient(to right, transparent, #fff, transparent);
+}
+.card{
+    transition: all 0.2s ease;
+    &:hover{
+        z-index: 10;
+        box-shadow: 0em 0.3em 0.5em 0.1em #e9ecef1e;
+        transform: scale(1.15);
+    }
 }
 
 // header {
