@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function(){
       imageContainer.style.height = textHeight + 'px';
     }
 
+    /* Enable popover bootstrap */
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
     
 
   }); 
