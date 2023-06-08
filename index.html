@@ -191,7 +191,7 @@
                                     </div> 
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <div class="row">
+                                    <div class="row py-2">
                                         <div class="col-12">
                                             <p>
                                                 My name is <a target="_blank" class="text-decoration-none color-dast-3 fw-bold" href="assets/pdf/cv_davidsiltroy.pdf"> David Silva Troya</a> and 
@@ -256,6 +256,35 @@
                                     <hr class="underline-title">
                                 </h1>
                             </div>
+                            <!-- project JavaScript API strawberry flowers -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#javaScriptFlowerDetectionAPI">
+                                    <div class="card">
+                                        <img src="assets/img/javascript_api_strawberry_flowers_2.jpg" class="card-img-top" alt="proyect">
+                                        <div class="card-body text-start">
+                                            <h5 class="card-title">
+                                                Javascript: Strawberry Flowers Detection API
+                                            </h5>
+                                            <p class="card-text">
+                                                API made with the Express framework, has a model trained in YOLOv5 but exported to be used with Tensorflowjs and another model in Roboflow. 
+                                                The models are trained to detect strawberry flowers from pictures taken by phone or by a drone.
+                                                The API works by receiving the image in base64, returning a JSON with the answer of the flowers detected.
+                                            </p>
+                                            <p class="card-text">22/01/2023</p>
+                                            <p class="p-0 m-0">
+                                                <span class="badge text-bg-info">JavaScript</span>
+                                                <span class="badge text-bg-info">Express.js</span>
+                                                <span class="badge text-bg-info">YOLOv5</span>
+                                                <span class="badge text-bg-info">Roboflow</span>
+                                                <span class="badge text-bg-info">AI</span>
+                                                <span class="badge text-bg-info">API</span>
+                                                <span class="badge text-bg-info">Object Detection</span> 
+                                            </p>
+                                        </div>
+                                    </div>    
+                                </button>
+                            </div>
+
                             <!-- project python API strawberry flowers -->
                             <div class="col-12 col-md-6 col-lg-4">
                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pythonYOLOv7API">
@@ -553,13 +582,64 @@
                 </div>
             </div>
         </div>
+        <!-- Modal JavaScript API strawberry flowers -->
+        <div class="modal fade" id="javaScriptFlowerDetectionAPI" tabindex="-1" aria-labelledby="javaScriptFlowerDetectionAPILabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center" id="javaScriptFlowerDetectionAPILabel">Javascript: Strawberry Flowers Detection API</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            In the classes called "Project 4" I was in a awesome team with students from other sector of the IT like Application development and Cyber Security. Giedre and I, as students of Applied Computer Science had the Artificial Intelligence area of the project.
+                        </p>
+                        <p>
+                            This API was developed in the Realization Phase of the project, after having some issues with the resources the python model was using in the model trained with YOLOv7. 
+                            Now a nano model of YOLOv5 was used and exported to be used in Tensorflow.js, besides a Roboflow model was trained by Giedre and implemented in this API.
+                        </p>
+                        <p>
+                            API made with the Express framework, has a model trained in YOLOv5 but exported to be used with Tensorflowjs and another model in Roboflow. 
+                            The models are trained to detect strawberry flowers from pictures taken by phone or by a drone.
+                            The API works by receiving the image in base64, returning a JSON with the answer of the flowers detected.
+                        </p>
+                        <p>
+                            Like with the previous API for Strowberry Flowers detection un python, the repository for this API is in GitHub with a README.md file that has more details about how to use it.
+                        </p>
+                        <p class="px-md-4">
+                            <img class="w-100" src="assets/img/javascript_api_strawberry_flowers_description_1.jpg" alt="">
+                        </p>
+                        <p>
+                            The API has a clear floder structure to find the necessary files, even the models already exported from YOLOv5 are in separated folder depending if it is to be used in smartphone images or drone images.
+                        </p>
+                        <p class="px-md-4">
+                            <img class="w-100" src="assets/img/javascript_api_strawberry_flowers_description_2.jpg" alt="">
+                        </p>
+                        <p>
+                            The code of the API has also a script called "fechando.js" that allows the user to test how the API works, it requires knowledge in JavaScript and then it should be easy to replace the images to make new tests.
+                            Here we can see the result of one of the tests, providing information like the time the API takes to return an answer:
+                        </p>
+                        <p class="px-md-4">
+                            <img class="w-100" src="assets/img/javascript_api_strawberry_flowers_description_3.jpg" alt="">
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://github.com/DavidSilTroy/node_express_ai_api" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>&nbsp; See in Github
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Modal python API strawberry flowers -->
         <div class="modal fade" id="pythonYOLOv7API" tabindex="-1" aria-labelledby="pythonYOLOv7APILabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="pythonYOLOv7APILabel">Python: Strawberry Flowers Detection API</h1>
+                        <h1 class="modal-title fs-5 text-center" id="pythonYOLOv7APILabel">Python: Strawberry Flowers Detection API</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -576,7 +656,7 @@
                         <p>
                             The documentation of this API is in github, in the README.md file and there all the steps to follow to send the pictures using postman.
                         </p>
-                        <p class="p-5">
+                        <p class="p-md-5">
                             <img src="assets/img/python_api_strawberry_flowers_3.jpg" class="w-100" alt="">
 
                         </p>
@@ -597,7 +677,7 @@
             <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="arduinoProjectESTLabel">Arduino: Electric Surf table program</h1>
+                <h1 class="modal-title fs-5 text-center" id="arduinoProjectESTLabel">Arduino: Electric Surf table program</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

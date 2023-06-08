@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     if(cardTexts)
     {
-      clampTextLines(cardTexts, 150);
+      clampTextLines(cardTexts, 250);
     }
     if(cardTitles)
     {
