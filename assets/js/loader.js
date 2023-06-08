@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function clampTextLines(elements, maxCharts) {
       elements.forEach(element => { 
-        const text = element.textContent;
+        const text = element.textContent.trim();
         if(text && text.length> maxCharts)
         {
           element.textContent = text.substring(0, maxCharts - 3) + '...';
