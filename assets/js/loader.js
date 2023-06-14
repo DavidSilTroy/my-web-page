@@ -1,26 +1,27 @@
 //variables globales
 var davst = {
-    menuHide: true,
-    screenY: 0,
-    menuStarted: false,
-    menuColorTime: 0.6,
-    showedProject: 0,
+    index:'index_hero',
+    about:'index_aboutme',
+    projects:'index_projects',
+    intership:'index_internship',
 }
 
 //Runing Javascript once the page if fully loaded
 document.addEventListener("DOMContentLoaded", function(){
+
+    for (var key in davst) {
+      if (davst.hasOwnProperty(key)) {
+          showElement(key); 
+      }
+    }
     // /*Scrolling*/
     window.onscroll = () => {
-        console.log(window.scrollY);
-        // davst.screenY = window.scrollY;
-        // console.log(davst.screenY)
-        // colorMenu();
-        // showProjects();
-        // showSkills();
-        // showExperience();
-        // if (!davst.menuHide) {
-        //     menuHideShow();
-        // }
+      console.log(window.scrollY);  
+      for (var key in davst) {
+        if (davst.hasOwnProperty(key)) {
+            showElement(key); 
+        }
+    }
     };
     window.addEventListener('scroll', function() {
         // console.log(window.scrollY);
@@ -70,9 +71,24 @@ document.addEventListener("DOMContentLoaded", function(){
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-    
 
   }); 
+
+  const showElement = (key) => {
+    console.log(key);
+    /*GSAP*/
+    let element_for_animation = document.getElementById(davst[key]);
+    var tl = gsap.timeline({ paused: true });
+    tl.fromTo(element_for_animation, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: 1 });
+    let element_position = element_for_animation.getBoundingClientRect();
+    let element_abs_position = window.scrollY + element_position.y;
+    let pos_for_animation = element_abs_position - element_position.height/2;
+    if (pos_for_animation <= window.scrollY) { 
+      tl.play();
+      delete davst[key];
+    }
+  }
+
 
 
 // var davst_menuMove = null;
